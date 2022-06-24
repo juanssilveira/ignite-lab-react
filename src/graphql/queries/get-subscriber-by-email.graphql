@@ -1,0 +1,6 @@
+query GetSubscriberByEmail($email: String) {
+  subscribers(stage: DRAFT, where: { email: $email }) {
+    id
+    email
+  }
+}

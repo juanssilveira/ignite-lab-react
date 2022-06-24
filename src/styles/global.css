@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Main Scrollbar */
+
+html::-webkit-scrollbar {
+  width: 5px;
+}
+
+html::-webkit-scrollbar-track {
+  @apply bg-gray-600;
+}
+
+html::-webkit-scrollbar-thumb {
+  @apply bg-green-500;
+}
+
+/* Sidebar Scrollbar */
+
+aside::-webkit-scrollbar {
+  width: 0;
+}
+
+body {
+  @apply bg-gray-900 text-gray-100;
+
+  -webkit-font-smoothing: antialiased !important;
+}
+
+.errorToast {
+  @apply font-sans bg-gray-700;
+}
