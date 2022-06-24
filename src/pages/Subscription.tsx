@@ -1,6 +1,9 @@
 import { FormEvent, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
+import codeImage from "../assets/code.png"
+import rocketseatLogo from "../assets/rocketseat.svg"
+
 import { 
   useCreateSubscriberMutation, 
   useGetLessonsQuery, 
@@ -113,14 +116,14 @@ export function Subscription() {
         </div>
 
         <div>
-          <img src="/src/assets/code.png" alt="Código" className="mt-8" />
+          <img src={codeImage} alt="Código" className="mt-8" />
         </div>
       </div>
 
       <footer className="w-full py-8">
         <div className="flex justify-between w-full max-w-[1216px] mx-auto">
           <div className="flex gap-8 items-center">
-            <img src="/src/assets/rocketseat.svg" alt="" />
+            <img src={rocketseatLogo} alt="Rocketseat" />
 
             <p className="text-sm text-gray-300">
               <strong>Rocketseat</strong> - Todos os direitos reservados.
